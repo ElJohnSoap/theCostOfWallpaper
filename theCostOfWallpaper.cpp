@@ -19,8 +19,7 @@ int main()
     Rooms room1;
     room1.setRooms();
     room1.printInfoRooms();
-    room1.setTheAreaOfAllWalls();
-    cout << room1.getTheAreaOfAllWalls();
+   
 }
 
 

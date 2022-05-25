@@ -30,8 +30,7 @@ private:
 	void messageWithTheWrongSize();
 	double calculateTheAreaOfAllWalls(double length, double width, double height)
 	{
-		double c = (length * height) * 2 + (width * height) * 2;
-		return c;
+		return (length * height) * 2 + (width * height) * 2;
 	}
 
 

@@ -101,7 +101,7 @@ void Rooms::setHeight(double i)
 		messageWithTheWrongSize();
 		cin >> i;
 	}
-	width = i;
+	height = i;
 }
 
 void Rooms::setGluingTheCeiling(double i)
@@ -133,6 +133,7 @@ void Rooms::setRooms()
 	cout << "Клеить потолок - ";
 	cin >> i;
 	setGluingTheCeiling(i);
+	setTheAreaOfAllWalls();
 }
 
 void Rooms::setTheAreaOfAllWalls()
@@ -185,4 +186,5 @@ void Rooms::printInfoRooms()
 	cout << "Ширина: " << getWidth() << endl;
 	cout << "Высота: " << getHeight() << endl;
 	cout << "Клеить потолок: " << booleanToMessage() << endl;
+	cout << " Площадь комнаты: " << getTheAreaOfAllWalls();
 }
