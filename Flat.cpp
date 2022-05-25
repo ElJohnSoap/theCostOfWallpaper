@@ -108,8 +108,8 @@ void Rooms::setGluingTheCeiling(double i)
 {
 	while (i != 0 && i != 1)
 	{
-		cout << "0 - не клеить потолок";
-		cout << "1 - клеить потолок";
+		cout << "0 - не клеить потолок : 1 - клеить потолок";
+		cin >> i;
 	}
 	gluingTheCeiling = i;
 }
@@ -171,7 +171,7 @@ string Rooms::booleanToMessage()
 	}
 	return s;
 }
-double getTheAreaOfAllWalls()
+double Rooms::getTheAreaOfAllWalls()
 {
 	return theAreaOfAllWalls;
 }

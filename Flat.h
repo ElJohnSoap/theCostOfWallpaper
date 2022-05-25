@@ -30,8 +30,8 @@ private:
 	void messageWithTheWrongSize();
 	double calculateTheAreaOfAllWalls()
 	{
-		theAreaOfAllWalls = (length * height) * 2 + (width * height) * 2;
-		return theAreaOfAllWalls;
+		double c = (length * height) * 2 + (width * height) * 2;
+		return c;
 	}
 
 
@@ -53,6 +53,6 @@ public:
 	bool getGluingTheCeiling();
 	double getTheAreaOfAllWalls();
 	string booleanToMessage();
-	int getRooms();
+	//int getRooms();
 	void printInfoRooms();
 };
