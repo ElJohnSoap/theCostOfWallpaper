@@ -113,10 +113,7 @@ void Rooms::setGluingTheCeiling(double i)
 	}
 	gluingTheCeiling = i;
 }
-void Rooms::setTheAreaOfAllWalls()
-{
-	theAreaOfAllWalls = calculateTheAreaOfAllWalls();
-}
+
 void Rooms::setRooms()
 {
 	string s;
@@ -136,6 +133,11 @@ void Rooms::setRooms()
 	cout << "Клеить потолок - ";
 	cin >> i;
 	setGluingTheCeiling(i);
+}
+
+void Rooms::setTheAreaOfAllWalls()
+{
+	theAreaOfAllWalls = calculateTheAreaOfAllWalls(getLength(), getWidth(), getHeight());
 }
 
 string Rooms::getTitle()

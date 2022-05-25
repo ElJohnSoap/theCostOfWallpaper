@@ -28,7 +28,7 @@ private:
 	bool gluingTheCeiling;
 	bool checkingTheInputRooms(double i);
 	void messageWithTheWrongSize();
-	double calculateTheAreaOfAllWalls()
+	double calculateTheAreaOfAllWalls(double length, double width, double height)
 	{
 		double c = (length * height) * 2 + (width * height) * 2;
 		return c;
