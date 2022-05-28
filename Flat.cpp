@@ -108,7 +108,8 @@ void Rooms::setGluingTheCeiling(double i)
 {
 	while (i != 0 && i != 1)
 	{
-		cout << "0 - не клеить потолок : 1 - клеить потолок";
+		cout << "0 - не клеить потолок : 1 - клеить потолок\n";
+		cout << "повторите ввод - ";
 		cin >> i;
 	}
 	gluingTheCeiling = i;
@@ -138,7 +139,7 @@ void Rooms::setRooms()
 
 void Rooms::setTheAreaOfAllWalls()
 {
-	theAreaOfAllWalls = calculateTheAreaOfAllWalls(getLength(), getWidth(), getHeight());
+	theAreaOfAllWalls = calculateTheAreaOfAllWalls(getLength(), getWidth(), getHeight(), getGluingTheCeiling());
 }
 
 string Rooms::getTitle()
@@ -182,9 +183,9 @@ double Rooms::getTheAreaOfAllWalls()
 void Rooms::printInfoRooms()
 {
 	cout << "Название: " << getTitle() << endl;
-	cout << "Длина: " << getLength() << endl;
+	cout << "Длина:  " << getLength() << endl;
 	cout << "Ширина: " << getWidth() << endl;
 	cout << "Высота: " << getHeight() << endl;
 	cout << "Клеить потолок: " << booleanToMessage() << endl;
-	cout << " Площадь комнаты: " << getTheAreaOfAllWalls();
+	cout << "Площадь комнаты: " << getTheAreaOfAllWalls();
 }
